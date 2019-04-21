@@ -15,8 +15,8 @@ dbConfig();
 */
 middlewaresConfig(app);
 
-
-app.use('./api', [ChatRoutes]);
+// app.use('/', () => {console.log("TEST")});
+app.use('/api', [ChatRoutes]);
 
 const PORT = process.env.PORT || 3000;
 
