@@ -1,0 +1,13 @@
+{
+  "name": "chat-app-backend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.2"
+  }
+}
