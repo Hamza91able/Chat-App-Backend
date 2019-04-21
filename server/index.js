@@ -1,5 +1,6 @@
 import express from 'express';
 import dbConfig from './config/db';
+import middlewaresConfig from './config/middlewares';
 
 const app = express();
 
@@ -7,6 +8,10 @@ const app = express();
     Database
 */
 dbConfig();
+
+/* 
+    Middlewares
+*/
 
 const PORT = process.env.PORT || 3000;
 
