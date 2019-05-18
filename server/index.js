@@ -1,7 +1,7 @@
 import express from 'express';
 import dbConfig from './config/db';
 import middlewaresConfig from './config/middlewares';
-import { ChatRoutes } from './modules';
+import { ChatRoutes, CreateNewUserRoute } from './modules/index';
 
 const app = express();
 
@@ -15,8 +15,8 @@ dbConfig();
 */
 middlewaresConfig(app);
 
-// app.use('/', () => {console.log("TEST")});
 app.use('/api', [ChatRoutes]);
+app.use('/api', [CreateNewUserRoute]);
 
 const PORT = process.env.PORT || 3000;
 
